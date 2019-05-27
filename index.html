@@ -1,0 +1,20 @@
+<p><script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script><br><script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script><br>GIPHY APIを使用してGifを検索してコピペできるツール</p>
+<p>Powered By GIPHY</p>
+<img src="https://himakan.net/wp-content/uploads/2019/04/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif">
+<h4>トレンド検索</h4>
+<p>トレンド検索を有効にする：<input id="trending" type="checkbox"><br>※トレンド検索を有効にすると検索ワードは無視されます。</p>
+<h4>検索ワード(例：good+job)</h4>
+<p>great, wonderful, amazing, excellent, fantastic, marvelous, ...<br><textarea id="word">good</textarea></p>
+<h4>検索数(最大100まで)</h4>
+<p><textarea id="limit">10</textarea><br><button id="btn">Search!!</button><br>画像をクリックするだけでコピペがされます。コピーされる画像は幅200px固定の画像になります。<br>例：`[![LGTM](https://i.imgur.com/zRmVtQh.gif)](https://media2.giphy.com/media/eebmNnxxtSNiw/200w.gif)`のようにすぐ使えます。<br>これは画像表示エラーの場合に、GIPHYの画像ページのリンクを追加する記法です。</p>
+<div id="lgtm_images" style="overflow: hidden;"></div>
+<p><button id="more_btn">more!!</button></p>
+<script type="text/javascript" src="NeuQuant.js"></script>
+<script type="text/javascript" src="TypedNeuQuant.js"></script>
+<script type="text/javascript" src="GIFEncoder.js"></script>
+<script type="text/javascript" src="LZWEncoder.js"></script>
+<script type="text/javascript" src="gif.js"></script>
+<script type="text/javascript" src="gif.worker.js"></script>
+<script type="text/javascript" src="omggif.js"></script>
+<script src="LGTMImageBuilder.js"></script>
+<script src="lgiftm.js"></script>
